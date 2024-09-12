@@ -154,7 +154,10 @@ body {
   height: 155px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  justify-content: space-between;
+  padding: 16px 22px;
+  border: 1px solid;
+  border-color: #E0E0E0;
 }
 .advantages__cart__title {
   display: flex;
