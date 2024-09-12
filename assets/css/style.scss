@@ -1,0 +1,353 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-SemiBold.ttf);
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: Work Sans;
+    src: url(../fonts/WorkSans-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Work Sans;
+    src: url(../fonts/WorkSans-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    background: url("../img/bg-main.jpg") no-repeat left top / cover;
+    background-size: 608px 740px;
+}
+
+.container{
+    max-width: 1165px;
+    margin: 0 auto;
+}
+
+.header{
+    &__wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__elems{
+        display: flex;
+        align-items: center;
+    }
+    &__icons{
+        display: flex;
+        align-items: center;
+    }
+    &__btns{
+        display: flex;
+        align-items: center;
+    }
+    &__search{
+        margin-right: 40px;
+    }
+}
+
+.btn{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #156963;
+    padding: 8px 33px;
+    &_w{
+        color:#156963;
+        background-color: #fff;
+    }
+}
+
+.select{
+    width: 130px;
+    height: 30px;
+}
+
+.main{
+    &__wrap{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__texts{
+        width: 519px;
+        height: 286px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 70px;
+        margin-top: 100px;
+    }
+    &__title{
+        font-size: 68px;
+        color: #156963;
+        font-weight: 400;
+        margin-bottom: 24px;
+    }
+    &__text{
+        font-size: 18px;
+        font-weight: 400;
+        color: #2C1500;
+    }
+    &__btns{
+        display: flex;
+    }
+    &__btn{
+        width: 300px;
+        height: 150px;
+        margin-top: 103px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        border: none;
+
+        &__text{
+            font-weight: 400;
+            font-size: 24px;
+            color: #333333;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+
+            &__bottom{
+                font-size: 32px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.advantages{
+    max-height: 300px;
+    margin-top: 150px;
+    &__carts{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__cart{
+        width: 268px;
+        height: 155px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        &__title{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            font-weight: 800;
+            font-size: 10px;
+            color: #156963;
+            gap: 12px;
+            width: 130px;
+        }
+        &__disc{
+            color: #2C1500;
+            font-weight: 400;
+            font-size: 10px;
+            width: 236px;
+        }
+    }
+}
+
+.featured{
+    margin-top: 80px;
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        &__text{
+            font-size: 20px;
+            font-weight: 400;
+        }
+    }
+    &__carts{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__cart{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__name{
+                font-size: 16px;
+                font-weight: 400;
+            }
+            &__price{
+                font-size: 16px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.relax{
+    margin-top: 80px;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left{
+        max-width: 570px;
+        &__title{
+            max-width: 520px;
+            font-size: 40px;
+            font-weight: 700;
+            color: #2C1500;
+            margin-top: 10px;
+        }
+        &__disc{
+            font-size: 16px;
+            font-weight: 400;
+            width: 506px;
+            margin-top: 15px;
+        }
+        &__picture{
+            margin-top: 130px;
+        }
+    }
+    &__right{
+        max-width: 513px;
+        height: 610px;
+    }
+}
+
+.get{
+    margin-top: 80px;
+    height: 360px;
+    &__wrapper{
+        background-color: #F3F4F6;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__text{
+        max-width: 583px;
+        margin-left: 90px;
+        margin-top: 80px;
+        &__title{
+            width: 585px;
+            font-size: 25px;
+            font-weight: 700;
+            margin-bottom: 33px;
+        }
+    }
+}
+
+.footer{
+    margin-top: 80px;
+    margin-bottom: 70px;
+    &_medium{
+        font-family: "Work Sans";
+        font-size: 16px;
+        font-weight: 500;
+        color:#000;
+    }
+    &_regular{
+        color: #000;
+        font-family: "Work Sans";
+        font-size: 14px;
+        font-weight: 400;
+    }
+    &__wrapper{
+        margin-top: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__info{
+        max-width: 280px;
+        display: flex;
+        flex-direction: column;
+        &__title{
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 500;
+            color: #156963;
+            text-transform: uppercase;
+            margin-bottom: 24px;
+        }
+        &__address{
+            font-size: 13px;
+            color: #4F4F4F;
+            margin-top: 10px;
+        }
+    }
+    &__perus{
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__subelems{
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__produk{
+        display: flex;
+        flex-direction: column;
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__subelems{
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    &__email{
+        display: flex;
+        flex-direction: column;
+        width: 235px;
+        &__title{
+            margin-bottom: 20px;
+        }
+        &__vvod{
+            width: 235px;
+        }
+        &__send{
+            margin-top: 15px;
+            width: 50px;
+        }
+    }
+}
